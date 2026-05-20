@@ -3,7 +3,9 @@ Job Market Intelligence Platform - Streamlit Frontend
 """
 import subprocess
 import sys
-subprocess.check_call([sys.executable, "-m", "pip", "install", "plotly", "streamlit"])
+import os
+subprocess.run([sys.executable, "-m", "pip", "install", "--upgrade", "pip"])
+subprocess.run([sys.executable, "-m", "pip", "install", "plotly", "streamlit", "--no-cache-dir", "--force-reinstall"])
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
