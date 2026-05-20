@@ -1,7 +1,9 @@
 """
 Job Market Intelligence Platform - Streamlit Frontend
 """
-
+import subprocess
+import sys
+subprocess.check_call([sys.executable, "-m", "pip", "install", "plotly", "streamlit"])
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
